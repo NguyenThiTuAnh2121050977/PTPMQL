@@ -13,6 +13,18 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+public IActionResult Demo()
+{
+    return View();
+}
+[HttpPost]
+
+public IActionResult Demo(string FullName, string Address)
+{
+    string strResult = " Hello " + FullName + "-" + Address;
+    ViewBag.thongBao = strResult;
+    return View();
+}
     public IActionResult Index()
     {
         return View();
@@ -29,3 +41,4 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
+

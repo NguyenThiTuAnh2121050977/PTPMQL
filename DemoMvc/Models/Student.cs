@@ -1,4 +1,4 @@
-namespace DemoMvc.Models
+namespace DemoMvc.Models   
 {
     public class Student
     {
