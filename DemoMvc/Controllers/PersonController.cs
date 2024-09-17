@@ -136,7 +136,7 @@ namespace DemoMvc.Controllers
 
         private bool PersonExists(string id)
         {
-            return (_context.Person.Any(e => e.PersonID == id)).GetValueOrDefault();
+            return _context.Person.Any(e => e.PersonID == id);
         }
     }
 }
