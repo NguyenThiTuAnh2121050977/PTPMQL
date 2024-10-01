@@ -54,7 +54,7 @@ namespace DemoMvc.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(person);
-        }
+        }   
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.Person == null)
