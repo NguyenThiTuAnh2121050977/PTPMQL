@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nguyễn Thị Tú Anh </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>Trường Đại học Mỏ – Địa chất (tiếng Anh: Hanoi University of Mining and Geology) là một trường đại học đa ngành hàng đầu tại Việt Nam, thuộc nhóm 95 trường đại học hàng đầu Đông Nam Á</p>
+<p>Trường được thành lập năm 1966, là trường đại học đa ngành, định hướng ứng dụng, đào tạo cán bộ Khoa học kỹ thuật trình độ đại học và trên đại học về các lĩnh vực: Dầu khí, Xây dựng, Công nghệ thông tin, Cơ khí, Tự động hóa, Khai thác tài nguyên khoáng sản, Bảo vệ môi trường, Đo đạc lãnh thổ lãnh hải, Quản lý đất đai, Kinh tế, Quản trị doanh nghiệp, Kế toán,... Hiện Nhà trường có 3 cơ sở đào tạo tại Hà Nội, Quảng Ninh và Vũng Tàu.</p>
+
+<header>
+  <h2>Đại học Mỏ-Địa chất Hà Nội</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">CS: Hà Nội </a></li>
+      <li><a href="#">CS: Quảng Ninh </a></li>
+      <li><a href="#">CS: Vũng Tàu </a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>CS: Hà Nội</h1>
+    <p>Văn phòng: Phòng 711, tầng 7 nhà C12 tầng khu A Trường ĐH Mỏ - Địa chất.</p>
+    <p>Địa chỉ: Số 18 Phố Viên, phường Đức Thắng, quận Bắc Từ Liêm, Hà Nội.</p>
+    <p>Điện thoại: (84-24) 3838-7570.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Tiếp</p>
+</footer>
+
+</body>
+</html>
