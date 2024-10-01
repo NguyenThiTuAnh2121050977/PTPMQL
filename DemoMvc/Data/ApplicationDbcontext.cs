@@ -7,7 +7,8 @@ namespace DemoMvc.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {}
-        public DbSet<Person> Person { get; set;}
-
+        public DbSet<Person> Persons { get; set;}
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Employee> Employees { get; set;}    
     }
 }
